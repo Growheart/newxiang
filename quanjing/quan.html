@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/quan.css" />
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<script type="text/javascript" src="js/angular.min.js" ></script>
+		<script type="text/javascript" src="js/angular-route.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.js" ></script>
+		<!--<script type="text/javascript" src="js/angular-sanitize.js" ></script>-->
+	</head>
+	<body ng-app='app'>
+		<!--<script type="text/javascript" src="js/canvas.js" ></script>-->
+		<script type="text/javascript" src="js/quan.js" ></script>
+		<div class="container-fluid">
+			<div class="logo">
+				<img src="img/logo.png" style="margin: 15px;"/>
+				<p class="pull-right" style="color: #FFFFFF;line-height: 70px;margin-right:20px ;"><span class="glyphicon glyphicon-earphone" style="margin-right: 5px;"></span>4008-117-888</p>
+			</div>
+			<nav class="navbar navbar-default" role="navigation">
+			  <div class="container-fluid">
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav dao">
+			        <li class="dropdown">
+			          <a href="#fenlei" class="dropdown-toggle" data-toggle="dropdown">分类搜索 <span class="caret"></span></a>
+			          <ul class="dropdown-menu" role="menu">
+			            <li><a href="#">热门</a></li>
+			            <li><a href="#">汽车</a></li>
+			            <li><a href="#">IT通讯录</a></li>
+			            <li><a href="#">房地产</a></li>
+			            <li><a href="#">金融</a></li>
+			            <li><a href="#">快消品</a></li>
+			            <li><a href="#">东方人物</a></li>
+			            <li><a href="#">中国概念</a></li>
+			          </ul>
+			        </li>
+			        <li><a href="#chuangyi" >创意图片</a></li>
+			        <li><a href="#bianji">编辑图片</a></li>
+			        <li><a href="#hualang">创意画廊</a></li>
+			        <li><a href="#taocan">图片套餐</a></li>
+			        <li><a href="#sheying">摄影师专区</a></li>
+			      </ul>
+			      <ul class="nav navbar-nav navbar-right navright">
+			        <li id="chongxin"><a href="#denglu" class="pull-left">登录</a><span class="pull-left" style="margin-top: 13px;">|</span><a href="#zhuce" class="pull-left">注册</a></li>
+			      </ul>
+			    </div><!-- /.navbar-collapse -->
+			  </div><!-- /.container-fluid -->
+			</nav>
+<!--导航结束-->
+            <div ng-view></div>	
+<!--第一页开始-->
+            <!--banner图开始-->
+            <script type="text/ng-template" id="fenlei">
+	            <div class="first">
+					<div id="carousel-example-generic" class="carousel slide banner" data-ride="carousel">
+						  <ol class="carousel-indicators">
+						    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+						    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+						    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+						    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+						  </ol>
+						  <div class="carousel-inner" role="listbox">
+						    <div class="item active">
+						      <img src="img/banner1.jpg" alt="..." style="height: 450px;">
+						    </div>
+						    <div class="item">
+						      <img src="img/banner2.jpg" alt="..." style="height: 450px;">
+						    </div>
+						     <div class="item">
+						      <img src="img/banner3.jpg" alt="..." style="height: 450px;">
+						    </div>
+						     <div class="item">
+						      <img src="img/banner4.jpg" alt="..." style="height: 450px;">
+						    </div>
+						  </div>
+						  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+						    <span class="glyphicon glyphicon-chevron-left"></span>
+						    <span class="sr-only">Previous</span>
+						  </a>
+						  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+						    <span class="glyphicon glyphicon-chevron-right"></span>
+						    <span class="sr-only">Next</span>
+						  </a>
+					</div>
+					<!--banner图结束-->
+					<div class="col-md-5 ding">
+						<div class="input-group">
+					      <input type="text" class="form-control" style="height: 55px;" placeholder="搜索您喜欢的图片">
+					      <span class="input-group-btn">
+					        <button class="btn btn-warning" type="button" style="height: 55px;width: 55px;"><i class="glyphicon glyphicon-search"></i></button>
+					      </span>
+					    </div>
+				    </div>
+				    <div class="banxia">
+				        <img src="img/banxia2.png" style="margin-top: -5px;"/>
+				        <button class="btn btn-warning cha">查看详情</button>
+				    </div>
+				    <ul class="clearfix second-dao">
+				    	<li class="pull-left active">汽车背景</li>
+				    	<li class="pull-left">生活方式</li>
+				    	<li class="pull-left">科技环保</li>
+				    	<li class="pull-left">东方创意</li>
+				    	<li class="pull-left">大师作品</li>
+				    	<li class="pull-left">热门专题</li>
+				    </ul>
+				    <div class="qiche clearfix">
+				    	<p style="margin-left: 3%;margin-bottom: 20px;" class="daolu">
+				    		<img src="img/ico_sd.jpg" class="pull-left" style="margin-right: 8px;"/>
+				    		速度
+				    	</p>
+				    	<div class="pull-left su">
+				    		<img src="img/sd1.jpg" />
+				    	</div>
+				    	<div class="pull-left du">
+				    		<div class="du1">
+				    			<img src="img/sd2.jpg" />
+				    		</div>
+				    		<div class="du2">
+				    			<img src="img/sd4.jpg" />
+				    		</div>
+				    	</div>
+				    	<div class="pull-left sudu">
+				    		<div class="sudu1">
+				    			<img src="img/sd3.jpg" />
+				    		</div>
+				    		<div class="sudu2">
+				    			<img src="img/sd5.jpg" />
+				    		</div>
+				    	</div>
+				    </div>
+				    
+				    <div class="qiche clearfix" style="margin-top: 40px;">
+				    	<p style="margin-left: 3%;margin-bottom: 20px;" class="daolu">
+				    		<img src="img/ico_road.jpg" class="pull-left" style="margin-right: 8px;"/>
+				    		道路
+				    	</p>
+				    	<div class="left-tu pull-left">
+				    		<img src="img/road1.jpg" class="pull-left"/>
+				    		<img src="img/road2.jpg" />
+				    		<img src="img/road4.jpg" class="pull-left"/>
+				    		<img src="img/road5.jpg" />
+				    	</div>
+				    	<div class="right-tu pull-left">
+				    		<img src="img/road3.jpg" />
+				    	</div>
+				    </div>
+				    
+				    <div class="qiche clearfix">
+				    	<p style="margin-left: 3%;margin-bottom: 20px;margin-top: 40px;" class="daolu">
+				    		<img src="img/ico_jz.jpg" class="pull-left" style="margin-right: 8px;"/>
+				    		建筑
+				    	</p>
+				    	<div class="pull-left jian">
+				    		<img src="img/jz1.jpg"/>
+				    		<img src="img/jz4.jpg" />
+				    	</div>
+				    	<div class="pull-left jianzhu">
+				    	    <img src="img/jz2.jpg"/>
+				    	</div>
+				    	<div class="pull-left zhu">
+				    		<img src="img/jz3.jpg" />
+				    		<img src="img/jz5.jpg" />
+				    	</div>
+				    </div>
+				    
+				    
+				    <div class="qiche clearfix">
+				    	<p style="margin-left: 3%;margin-bottom: 20px;margin-top: 40px;" class="daolu">
+				    		<img src="img/ico_fj.jpg" class="pull-left" style="margin-right: 8px;"/>
+				    		风景
+				    	</p>
+				    	<div class="pull-left feng">
+				    		<div class="jing">
+				    			<img src="img/fj1.jpg" />
+				    		</div>
+				    		<div>
+				    			<img src="img/fj4.jpg" class="pull-left" style="margin-right: 5px;"/>
+				    			<img src="img/fj5.jpg" />
+				    		</div>
+				    	</div>
+				    	<div class="pull-left fengjing">
+				    		<img src="img/fj2.jpg" />
+				    	</div>
+				    	<div class="pull-left fengjing1">
+				    		<img src="img/fj3.jpg" />
+				    	</div>
+				    </div>
+				    
+				</div>
+			</script>
+<!--第一页结束-->
+<!--第二页开始-->
+           <script type="text/ng-template" id="chuangyi">
+	           <div class="second">
+	            	<img src="img/dier/45.png" style="width: 100%;" class="sousuo"/>
+	            	<div class="col-md-5 ding">
+						<div class="input-group">
+					      <input type="text" class="form-control" style="height: 55px;" placeholder="搜索您喜欢的图片">
+					      <span class="input-group-btn">
+					        <button class="btn btn-primary" type="button" style="height: 55px;width: 55px;"><i class="glyphicon glyphicon-search"></i></button>
+					      </span>
+					    </div>
+				    </div>
+				    <p class="text-center big">从8000万图片中获取无止境灵感。现在就开始！</p>
+				    <img src="img/dier/index-cn1_15.png" class="xian"/>
+				    <div class="container">
+				    	<div class="clearfix">
+				    		<p class="bei"><span style="margin-right: 10px;">></span>汽车背景</p>
+					    	<div class="pull-left">
+					    		<div>
+					    			<img src="img/dier/index-cn1_21.jpg" class="pull-left" style="margin-right: 3px;margin-bottom: 3px;"/>
+					    			<img src="img/dier/index-cn1_25.jpg" style="margin-bottom: 3px;"/>
+					    		</div>
+					    		<div>
+					    			<img src="img/dier/index-cn1_30.jpg" class="pull-left" style="margin-right: 3px;"/>
+					    			<img src="img/dier/index-cn1_32-07.jpg" class="pull-left" style="margin-right: 3px;"/>
+					    			<img src="img/dier/index-cn1_32.jpg" />
+					    		</div>
+					    	</div>
+					    	<div class="pull-left">
+					    		<img src="img/dier/index-cn1_27.jpg" style="width: 207px;margin-left: 3px;height: 434px;"/>
+					    	</div>
+					    </div>
+					    
+					    <div class="clearfix">
+				    		<p class="bei"><span style="margin-right: 10px;">></span>生活方式</p>
+					    	<div class="pull-left" style="width: 270px;margin-right: 3px;">
+					    			<img src="img/dier/index-cn1_39.jpg" style="margin-bottom: 5px;"/>
+					    			<img src="img/dier/index-cn1_46.jpg" />
+					    	</div>
+					    	<div class="pull-left" style="margin-right: 3px;width: 430px;overflow: hidden;">
+					    		<img src="img/dier/index-cn1_41.jpg"/>
+					    	</div>
+					    	<div class="pull-left" style="width: 215px;margin-right: 3px;">
+					    			<img src="img/dier/index-cn1_43.jpg"/>
+					    	</div>
+					    	<div class="pull-left" style="width: 215px;">
+					    			<img src="img/dier/index-cn1_48.jpg" style="margin-bottom: 3px;"/>
+					    			<img src="img/dier/index-cn1_44.jpg" />
+					    	</div>
+					    </div>
+					    
+					     <div class="clearfix">
+				    		<p class="bei"><span style="margin-right: 10px;">></span>商务</p>
+					    	<div class="pull-left" style="width: 270px;margin-right: 3px;">
+					    			<img src="img/dier/index-cn1_51.jpg"/>
+					    	</div>
+					    	<div class="pull-left" style="margin-right: 3px;width: 380px;overflow: hidden;">
+					    		<img src="img/dier/index-cn1_54.jpg" style="margin-bottom: 5px;"/>
+					    		<img src="img/dier/index-cn1_60.jpg" />
+					    	</div>
+					    	<div class="pull-left" style="margin-right: 3px;width: 265px;overflow: hidden;">
+					    		<img src="img/dier/index-cn1_61.jpg" style="margin-bottom: 5px;"/>
+					    		<img src="img/dier/index-cn1_56.jpg" />
+					    	</div>
+					    	<div class="pull-left" style="width: 215px;">
+					    			<img src="img/dier/index-cn1_57.jpg"/>
+					    	</div>
+					    </div>
+					    
+					    <div class="clearfix">
+				    		<p class="bei"><span style="margin-right: 10px;">></span>创意</p>
+					    	<div class="pull-left" style="margin-right: 3px;width: 545px;">
+					    			<img src="img/dier/index-cn1_66.jpg" class="pull-left" style="margin-right: 5px;"/>
+					    			<img src="img/dier/index-cn1_67.jpg" />
+					    			<img src="img/dier/index-cn1_74.jpg" style="margin-top: 5px;"/>
+					    	</div>
+					    	<div class="pull-left" style="margin-right: 3px;width: 375px;overflow: hidden;">
+					    		<img src="img/dier/index-cn1_69.jpg"/>
+					    	</div>
+					    	<div class="pull-left" style="margin-right: 3px;width: 210px;overflow: hidden;">
+					    		<img src="img/dier/index-cn1_70.jpg" style="margin-bottom: 5px;"/>
+					    		<img src="img/dier/index-cn1_75.jpg" />
+					    	</div>
+					    </div>
+				    </div>
+	            </div>
+            </script>
+<!--第二页结束-->
+<!--第三页开始-->
+            <script type="text/ng-template" id="bianji">
+	            <div class="third">
+	            	fhwuihfiuw
+	            </div>
+            </script>
+<!--第三页结束-->
+<!--第四页开始-->
+            <script type="text/ng-template" id="hualang">
+	            <div class="four container clearfix">
+	            	<div class="pull-left hua">
+	            		<img src="img/four/biaoqian.png" class="pull-left biao"/>
+	            		<p class="ming">创意画廊</p>
+	            		<div class="anniu">
+	            			<button class="btn btn-default btn-sm">全部</button>
+	            			<button class="btn btn-default btn-sm">城市</button>
+	            			<button class="btn btn-default btn-sm">道路</button>
+	            			<button class="btn btn-default btn-sm">精英</button>
+	            			<button class="btn btn-default btn-sm">科技改变生活</button>
+	            			<button class="btn btn-default btn-sm">快乐家庭</button>
+	            			<button class="btn btn-default btn-sm">人车生活</button>
+	            			<button class="btn btn-default btn-sm">数码生活</button>
+	            			<button class="btn btn-default btn-sm">速度</button>
+	            			<button class="btn btn-default btn-sm">挑战</button>
+	            			<button class="btn btn-default btn-sm">因爱而生</button>
+	            			<button class="btn btn-default btn-sm">全景2014销售排行TOP50</button>
+	            			<button class="btn btn-default btn-sm">汽车背景-地面</button>
+	            			<button class="btn btn-default btn-sm">汽车背景-广场</button>
+	            			<button class="btn btn-default btn-sm">汽车背景-室内空间明亮</button>
+	            			<button class="btn btn-default btn-sm">汽车背景-现代建筑</button>
+	            		</div>
+	            	</div>
+	            	<div class="pull-left xihuan">
+	            		<div class="kuai pull-left">
+	            			<p class="xi pull-left">
+	            				<i class="glyphicon glyphicon-heart" style="margin-left: 1px;margin-top: 1px;font-size: 14px;"></i>
+	            				<span style="font-size: 12px;">我喜欢</span>
+	            			</p>
+	            			<p class="huan pull-right">602-00068</p>
+	            			<img src="img/four/ibldjs02273745 (1).jpg" style="margin-left: 9px;"/>
+	            			<p class="jianjie">特内里费岛,音乐厅,建筑师,圣地亚哥,圣克鲁斯-德特内里费,加纳利群岛,西班牙,欧洲</p>
+	            			<ul class="clearfix zan">
+	            				<li class="pull-left"><i class="glyphicon glyphicon-comment" style="margin-right: 5px;"></i>收藏</li>
+	            				<li class="pull-left"><i class="glyphicon glyphicon-save" style="margin-right: 5px;"></i>下载</li>
+	            				<li class="pull-left dianfeng"><i class="glyphicon glyphicon-thumbs-up" style="margin-right: 5px;"></i>分享
+		            				<div class="fengxiang">
+			            				<p class="fengdao">分享到</p>
+			            				<ul class="dian">
+			            					<li>
+			            						<img src="img/four/kongjian.png"/>
+			            						QQ空间
+			            					</li>
+			            					<li>
+			            						<img src="img/four/renren.png"/>
+			            						人人网
+			            					</li>
+			            					<li>
+			            						<img src="img/four/tenxun.png"/>
+			            						腾讯微博
+			            					</li>
+			            					<li>
+			            						<img src="img/four/weibo.png"/>
+			            						新浪微博
+			            					</li>
+			            					<li>
+			            						<img src="img/four/xiangce.png"/>
+			            						百度云相册
+			            					</li>
+			            					<li>
+			            						<img src="img/four/yunshoucang.png"/>
+			            						云收藏
+			            					</li>
+			            				</ul>
+			            				<p class="pull-right" style="margin-right: 10px;font-size: 12px;">百度分享</p>
+			            			</div>
+	            				</li>
+	            			</ul>
+	            			
+	            		</div>
+	            		
+	            		
+	            		<div class="kuai pull-left">
+	            			<p class="xi pull-left">
+	            				<i class="glyphicon glyphicon-heart" style="margin-left: 1px;margin-top: 1px;font-size: 14px;"></i>
+	            				<span style="font-size: 12px;">我喜欢</span>
+	            			</p>
+	            			<p class="huan pull-right">602-00068</p>
+	            			<img src="img/four/263-2891.jpg" style="margin-left: 9px;width: 250px;height: 166px;"/>
+	            			<p class="jianjie">北京首都国际机场T3航站楼三号航站楼清晨朝霞彩云</p>
+	            			<ul class="clearfix zan">
+	            				<li class="pull-left"><i class="glyphicon glyphicon-comment" style="margin-right: 5px;"></i>收藏</li>
+	            				<li class="pull-left"><i class="glyphicon glyphicon-save" style="margin-right: 5px;"></i>下载</li>
+	            				<li class="pull-left dianfeng"><i class="glyphicon glyphicon-thumbs-up" style="margin-right: 5px;"></i>分享
+	            				  <div class="fengxiang">
+			            				<p class="fengdao">分享到</p>
+			            				<ul class="dian">
+			            					<li>
+			            						<img src="img/four/kongjian.png"/>
+			            						QQ空间
+			            					</li>
+			            					<li>
+			            						<img src="img/four/renren.png"/>
+			            						人人网
+			            					</li>
+			            					<li>
+			            						<img src="img/four/tenxun.png"/>
+			            						腾讯微博
+			            					</li>
+			            					<li>
+			            						<img src="img/four/weibo.png"/>
+			            						新浪微博
+			            					</li>
+			            					<li>
+			            						<img src="img/four/xiangce.png"/>
+			            						百度云相册
+			            					</li>
+			            					<li>
+			            						<img src="img/four/yunshoucang.png"/>
+			            						云收藏
+			            					</li>
+			            				</ul>
+			            				<p class="pull-right" style="margin-right: 10px;font-size: 12px;">百度分享</p>
+			            			</div>
+	            				</li>
+	            			</ul>
+	            			
+	            		</div>
+	            		
+	            		
+	            		<div class="kuai">
+	            			<p class="xi pull-left">
+	            				<i class="glyphicon glyphicon-heart" style="margin-left: 1px;margin-top: 1px;font-size: 14px;"></i>
+	            				<span style="font-size: 12px;">我喜欢</span>
+	            			</p>
+	            			<p class="huan pull-right">602-00068</p>
+	            			<img src="img/four/top-921098.jpg" style="margin-left: 9px;width: 250px;height: 166px;"/>
+	            			<p class="jianjie">室内设计</p>
+	            			<ul class="clearfix zan">
+	            				<li class="pull-left"><i class="glyphicon glyphicon-comment" style="margin-right: 5px;"></i>收藏</li>
+	            				<li class="pull-left"><i class="glyphicon glyphicon-save" style="margin-right: 5px;"></i>下载</li>
+	            				<li class="pull-left dianfeng"><i class="glyphicon glyphicon-thumbs-up" style="margin-right: 5px;"></i>分享</li>
+	            			</ul>
+	            		</div>
+	            		
+	            		<div class="kuai pull-left">
+	            			<p class="xi pull-left">
+	            				<i class="glyphicon glyphicon-heart" style="margin-left: 1px;margin-top: 1px;font-size: 14px;"></i>
+	            				<span style="font-size: 12px;">我喜欢</span>
+	            			</p>
+	            			<p class="huan pull-right">602-00068</p>
+	            			<img src="img/four/mf700-00037098.jpg" style="margin-left: 9px;width: 250px;height: 166px;"/>
+	            			<p class="jianjie">泥,北方,萨斯喀彻温,河,靠近,班芙国家公园,艾伯塔省,加拿大</p>
+	            			<ul class="clearfix zan">
+	            				<li class="pull-left"><i class="glyphicon glyphicon-comment" style="margin-right: 5px;"></i>收藏</li>
+	            				<li class="pull-left"><i class="glyphicon glyphicon-save" style="margin-right: 5px;"></i>下载</li>
+	            				<li class="pull-left dianfeng"><i class="glyphicon glyphicon-thumbs-up" style="margin-right: 5px;"></i>分享</li>
+	            			</ul>
+	            		</div>
+	            		
+	            		<div class="kuai pull-left">
+	            			<p class="xi pull-left">
+	            				<i class="glyphicon glyphicon-heart" style="margin-left: 1px;margin-top: 1px;font-size: 14px;"></i>
+	            				<span style="font-size: 12px;">我喜欢</span>
+	            			</p>
+	            			<p class="huan pull-right">602-00068</p>
+	            			<img src="img/four/east-ep-a51-2686085.jpg" style="margin-left: 9px;width: 250px;height: 166px;"/>
+	            			<p class="jianjie">室内,隧道</p>
+	            			<ul class="clearfix zan">
+	            				<li class="pull-left"><i class="glyphicon glyphicon-comment" style="margin-right: 5px;"></i>收藏</li>
+	            				<li class="pull-left"><i class="glyphicon glyphicon-save" style="margin-right: 5px;"></i>下载</li>
+	            				<li class="pull-left dianfeng"><i class="glyphicon glyphicon-thumbs-up" style="margin-right: 5px;"></i>分享</li>
+	            			</ul>
+	            		</div>
+	            		
+	            		
+	            		<div class="kuai">
+	            			<p class="xi pull-left">
+	            				<i class="glyphicon glyphicon-heart" style="margin-left: 1px;margin-top: 1px;font-size: 14px;"></i>
+	            				<span style="font-size: 12px;">我喜欢</span>
+	            			</p>
+	            			<p class="huan pull-right">602-00068</p>
+	            			<img src="img/four/rad600-01174025.jpg" style="margin-left: 9px;width: 250px;height: 166px;"/>
+	            			<p class="jianjie">商务人士,柏油路</p>
+	            			<ul class="clearfix zan">
+	            				<li class="pull-left"><i class="glyphicon glyphicon-comment" style="margin-right: 5px;"></i>收藏</li>
+	            				<li class="pull-left"><i class="glyphicon glyphicon-save" style="margin-right: 5px;"></i>下载</li>
+	            				<li class="pull-left dianfeng"><i class="glyphicon glyphicon-thumbs-up" style="margin-right: 5px;"></i>分享</li>
+	            			</ul>
+	            		</div>
+	            		
+	            		
+	            		<div class="kuai pull-left">
+	            			<p class="xi pull-left">
+	            				<i class="glyphicon glyphicon-heart" style="margin-left: 1px;margin-top: 1px;font-size: 14px;"></i>
+	            				<span style="font-size: 12px;">我喜欢</span>
+	            			</p>
+	            			<p class="huan pull-right">602-00068</p>
+	            			<img src="img/four/27amy0083rf.jpg" style="margin-left: 9px;width: 250px;height: 166px;"/>
+	            			<p class="jianjie">家庭,走,葡萄园</p>
+	            			<ul class="clearfix zan">
+	            				<li class="pull-left"><i class="glyphicon glyphicon-comment" style="margin-right: 5px;"></i>收藏</li>
+	            				<li class="pull-left"><i class="glyphicon glyphicon-save" style="margin-right: 5px;"></i>下载</li>
+	            				<li class="pull-left dianfeng"><i class="glyphicon glyphicon-thumbs-up" style="margin-right: 5px;"></i>分享</li>
+	            			</ul>
+	            		</div>
+	            		
+	            		
+	            		<div class="kuai pull-left">
+	            			<p class="xi pull-left">
+	            				<i class="glyphicon glyphicon-heart" style="margin-left: 1px;margin-top: 1px;font-size: 14px;"></i>
+	            				<span style="font-size: 12px;">我喜欢</span>
+	            			</p>
+	            			<p class="huan pull-right">602-00068</p>
+	            			<img src="img/four/east-a41-1538153.jpg" style="margin-left: 9px;width: 250px;height: 166px;"/>
+	            			<p class="jianjie">北京,国家,剧院</p>
+	            			<ul class="clearfix zan">
+	            				<li class="pull-left"><i class="glyphicon glyphicon-comment" style="margin-right: 5px;"></i>收藏</li>
+	            				<li class="pull-left"><i class="glyphicon glyphicon-save" style="margin-right: 5px;"></i>下载</li>
+	            				<li class="pull-left dianfeng"><i class="glyphicon glyphicon-thumbs-up" style="margin-right: 5px;"></i>分享</li>
+	            			</ul>
+	            		</div>
+	            		
+	            		<div class="kuai">
+	            			<p class="xi pull-left">
+	            				<i class="glyphicon glyphicon-heart" style="margin-left: 1px;margin-top: 1px;font-size: 14px;"></i>
+	            				<span style="font-size: 12px;">我喜欢</span>
+	            			</p>
+	            			<p class="huan pull-right">602-00068</p>
+	            			<img src="img/four/rad600-00917918.jpg" style="margin-left: 9px;width: 250px;height: 166px;"/>
+	            			<p class="jianjie">画廊,坎特伯雷,南岛,新西兰</p>
+	            			<ul class="clearfix zan">
+	            				<li class="pull-left"><i class="glyphicon glyphicon-comment" style="margin-right: 5px;"></i>收藏</li>
+	            				<li class="pull-left"><i class="glyphicon glyphicon-save" style="margin-right: 5px;"></i>下载</li>
+	            				<li class="pull-left dianfeng"><i class="glyphicon glyphicon-thumbs-up" style="margin-right: 5px;"></i>分享</li>
+	            			</ul>
+	            		</div>
+	            		
+	            		<div class="kuai pull-left">
+	            			<p class="xi pull-left">
+	            				<i class="glyphicon glyphicon-heart" style="margin-left: 1px;margin-top: 1px;font-size: 14px;"></i>
+	            				<span style="font-size: 12px;">我喜欢</span>
+	            			</p>
+	            			<p class="huan pull-right">602-00068</p>
+	            			<img src="img/four/pe0067032.jpg" style="margin-left: 9px;width: 250px;height: 166px;"/>
+	            			<p class="jianjie">家庭,坐,平台,下午,太阳</p>
+	            			<ul class="clearfix zan">
+	            				<li class="pull-left"><i class="glyphicon glyphicon-comment" style="margin-right: 5px;"></i>收藏</li>
+	            				<li class="pull-left"><i class="glyphicon glyphicon-save" style="margin-right: 5px;"></i>下载</li>
+	            				<li class="pull-left dianfeng"><i class="glyphicon glyphicon-thumbs-up" style="margin-right: 5px;"></i>分享</li>
+	            			</ul>
+	            		</div>
+	            		
+	            		
+	            		<div class="kuai pull-left">
+	            			<p class="xi pull-left">
+	            				<i class="glyphicon glyphicon-heart" style="margin-left: 1px;margin-top: 1px;font-size: 14px;"></i>
+	            				<span style="font-size: 12px;">我喜欢</span>
+	            			</p>
+	            			<p class="huan pull-right">602-00068</p>
+	            			<img src="img/four/jui28480.jpg" style="margin-left: 9px;width: 250px;height: 166px;"/>
+	            			<p class="jianjie">微笑,家庭,卧,一起,雪中</p>
+	            			<ul class="clearfix zan">
+	            				<li class="pull-left"><i class="glyphicon glyphicon-comment" style="margin-right: 5px;"></i>收藏</li>
+	            				<li class="pull-left"><i class="glyphicon glyphicon-save" style="margin-right: 5px;"></i>下载</li>
+	            				<li class="pull-left dianfeng"><i class="glyphicon glyphicon-thumbs-up" style="margin-right: 5px;"></i>分享</li>
+	            			</ul>
+	            		</div>
+	            		
+	            		<div class="kuai">
+	            			<p class="xi pull-left">
+	            				<i class="glyphicon glyphicon-heart" style="margin-left: 1px;margin-top: 1px;font-size: 14px;"></i>
+	            				<span style="font-size: 12px;">我喜欢</span>
+	            			</p>
+	            			<p class="huan pull-right">602-00068</p>
+	            			<img src="img/four/09amy0474cl.jpg" style="margin-left: 9px;width: 250px;height: 166px;"/>
+	            			<p class="jianjie">伴侣,姿势,梯子</p>
+	            			<ul class="clearfix zan">
+	            				<li class="pull-left"><i class="glyphicon glyphicon-comment" style="margin-right: 5px;"></i>收藏</li>
+	            				<li class="pull-left"><i class="glyphicon glyphicon-save" style="margin-right: 5px;"></i>下载</li>
+	            				<li class="pull-left dianfeng"><i class="glyphicon glyphicon-thumbs-up" style="margin-right: 5px;"></i>分享</li>
+	            			</ul>
+	            		</div>
+	            		
+	            		<div class="kuai pull-left">
+	            			<p class="xi pull-left">
+	            				<i class="glyphicon glyphicon-heart" style="margin-left: 1px;margin-top: 1px;font-size: 14px;"></i>
+	            				<span style="font-size: 12px;">我喜欢</span>
+	            			</p>
+	            			<p class="huan pull-right">602-00068</p>
+	            			<img src="img/four/rob-806-335.jpg" style="margin-left: 9px;width: 250px;height: 166px;"/>
+	            			<p class="jianjie">火车站,设计,圣地亚哥,艾米利亚罗马涅,意大利,欧洲</p>
+	            			<ul class="clearfix zan">
+	            				<li class="pull-left"><i class="glyphicon glyphicon-comment" style="margin-right: 5px;"></i>收藏</li>
+	            				<li class="pull-left"><i class="glyphicon glyphicon-save" style="margin-right: 5px;"></i>下载</li>
+	            				<li class="pull-left dianfeng"><i class="glyphicon glyphicon-thumbs-up" style="margin-right: 5px;"></i>分享</li>
+	            			</ul>
+	            		</div>
+	            		
+	            		
+	            		<div class="kuai pull-left">
+	            			<p class="xi pull-left">
+	            				<i class="glyphicon glyphicon-heart" style="margin-left: 1px;margin-top: 1px;font-size: 14px;"></i>
+	            				<span style="font-size: 12px;">我喜欢</span>
+	            			</p>
+	            			<p class="huan pull-right">602-00068</p>
+	            			<img src="img/four/east-ep-a11-2270094.jpg" style="margin-left: 9px;width: 250px;height: 166px;"/>
+	            			<p class="jianjie">北京,星系,在家办公</p>
+	            			<ul class="clearfix zan">
+	            				<li class="pull-left"><i class="glyphicon glyphicon-comment" style="margin-right: 5px;"></i>收藏</li>
+	            				<li class="pull-left"><i class="glyphicon glyphicon-save" style="margin-right: 5px;"></i>下载</li>
+	            				<li class="pull-left dianfeng"><i class="glyphicon glyphicon-thumbs-up" style="margin-right: 5px;"></i>分享</li>
+	            			</ul>
+	            		</div>
+	            		
+	            		<div class="kuai">
+	            			<p class="xi pull-left">
+	            				<i class="glyphicon glyphicon-heart" style="margin-left: 1px;margin-top: 1px;font-size: 14px;"></i>
+	            				<span style="font-size: 12px;">我喜欢</span>
+	            			</p>
+	            			<p class="huan pull-right">602-00068</p>
+	            			<img src="img/four/bmh-rf-pop020359.jpg" style="margin-left: 9px;width: 250px;height: 166px;"/>
+	            			<p class="jianjie">时尚男女年轻人们</p>
+	            			<ul class="clearfix zan">
+	            				<li class="pull-left"><i class="glyphicon glyphicon-comment" style="margin-right: 5px;"></i>收藏</li>
+	            				<li class="pull-left"><i class="glyphicon glyphicon-save" style="margin-right: 5px;"></i>下载</li>
+	            				<li class="pull-left dianfeng"><i class="glyphicon glyphicon-thumbs-up" style="margin-right: 5px;"></i>分享</li>
+	            			</ul>
+	            		</div>
+	            		
+	            		
+	            		
+	            	</div>
+	            </div>
+            </script>
+<!--第四页结束-->
+<!--第五页开始-->
+            <script type="text/ng-template" id="taocan">
+	            <div class="five">
+	            	<p class="text-center jihua">购买计划</p>
+	            	<p class="text-center smallsize">为您量身定制的最佳创意方案</p>
+	            	<canvas id="canvas" width="995" height="515" style="background: #f3f3f3;margin-left: 190px;margin-top: 20px;">
+	            		
+	            	</canvas>
+	            	<div class="wangluo clearfix">
+	            		<p class="wangming pull-left">网络套餐</p>
+	            		<span style="font-size: 12px;margin-top: 20px;display: block;color: #9D9D9D;">一年</span>
+	            		<span style="font-size: 12px;margin-top: 1px;display: block;color: #9D9D9D;">TIFF2MB</span>
+	            		<div class="jiage pull-left">
+		            		<table class="table text-center" style="margin-top: 20px;">
+		            			<thead>
+		            				<tr style="font-size: 16px;color: #666666;">
+		            					<!--<th class="text-center" style="width: 15px;"></th>-->
+			            				<th class="text-center">数量(张)</th>
+			            				<th class="text-center">单价(￥)</th>
+			            				<th class="text-center">总价(￥)</th>
+		            				</tr>
+		            			</thead>
+		            			<tbody>
+		            				<tr class="tongji" ng-repeat='data in datas'>
+		            					<!--<td></td>-->
+		            					<td><input  type='radio' name='xuanze' class='xuanze' id=''  style="margin-right: 15px;margin-left: -15px;"/>{{data.num}}</td>
+		            					<td>{{data.price}}</td>
+		            					<td>{{data.num*data.price}}</td>
+		            				</tr>
+		            			</tbody>
+		            		</table>
+	            		</div>
+	            		<div class="jiayou pull-left">
+	            			<p class="youwen">网络用途，购买后一年内可任意下载Tiff2MB（72dpi）图片，图片授权期限为下载日起一年，授权期内可多次使用，使用范围有</p>
+	            			<div class="wenan">
+	            				<button class="btn btn-xs">微博配图</button>
+	            				<button class="btn btn-xs">微信配图</button>
+	            				<button class="btn btn-xs">APP移动客户端</button>
+	            				<button class="btn btn-xs">H5应用配图</button>
+	            				<button class="btn btn-xs">皮肤/主题</button>
+	            				<button class="btn btn-xs">装修模板类</button>
+	            				<button class="btn btn-xs">网站设计用图</button>
+	            			</div>
+	            		</div>
+	            	</div>
+	            	<button class="btn btn-warning fivean">一键购买</button>
+	            	
+	            	
+	            	
+	            	<canvas id="canvas1" width="995" height="515" style="background: #f3f3f3;margin-left: 190px;margin-top: 20px;">
+	            		
+	            	</canvas>
+	            	<div class="xianxia clearfix">
+	            		<p class="wangming pull-left">线下套餐</p>
+	            		<span style="font-size: 12px;margin-top: 20px;display: block;color: #9D9D9D;">一年</span>
+	            		<span style="font-size: 12px;margin-top: 1px;display: block;color: #9D9D9D;">TIFF2MB</span>
+	            		<div class="xianjia pull-left">
+		            		<table class="table text-center" style="margin-top: 20px;">
+		            			<thead>
+		            				<tr style="font-size: 16px;color: #666666;">
+		            					<!--<th class="text-center" style="width: 15px;"></th>-->
+			            				<th class="text-center">数量(张)</th>
+			            				<th class="text-center">单价(￥)</th>
+			            				<th class="text-center">总价(￥)</th>
+		            				</tr>
+		            			</thead>
+		            			<tbody>
+		            				<tr class="xiantong" ng-repeat='item in items'>
+		            					<!--<td></td>-->
+		            					<td><input  type='radio' name='xuan' class='xuan' id=''  style="margin-right: 15px;margin-left: -15px;"/>{{data.num}}</td>
+		            					<td>{{item.price}}</td>
+		            					<td>{{item.num*item.price}}</td>
+		            				</tr>
+		            			</tbody>
+		            		</table>
+	            		</div>
+	            		<div class="xianyou pull-left">
+	            			<p class="youwen">线下物料套餐，购买后一年内可任意下载Tiff20M图片，图片授权期限为下载日起一年，授权期内可多次使用，使用范围有</p>
+	            			<div class="wenan">
+	            				<button class="btn btn-xs">宣传册</button>
+	            				<button class="btn btn-xs">宣传册</button>
+	            				<button class="btn btn-xs">海报</button>
+	            				<button class="btn btn-xs">楼书</button>
+	            				<button class="btn btn-xs">展板</button>
+	            				<button class="btn btn-xs">手提袋</button>
+	            				<button class="btn btn-xs">易拉宝</button>
+	            				<button class="btn btn-xs">围挡</button>
+	            				<button class="btn btn-xs">室内灯箱</button>
+	            				<button class="btn btn-xs">商品陈列台</button>
+	            				<button class="btn btn-xs">挂历</button>
+	            			</div>
+	            		</div>
+	            	</div>
+	            	<button class="btn btn-warning fivean">一键购买</button>
+	            	<img src="img/five/hr.png" style="margin-left:200px;"/>
+	            	<p class="text-center meiyou"><i class="glyphicon glyphicon-shopping-cart"></i>没有满意的购买计划？</p>
+	            	<p class="text-center boda">请拨打4008-117-888，让我们的销售代表为您量身定制解决方案</p>
+	            	<p class="text-center bufen"><i class="glyphicon glyphicon-star-empty"></i>部分图片因品牌限价原因不参与套餐计划，数量约占全景图库的5%。</p>
+	            	
+	     
+	            </div>
+	            
+            </script>
+            
+<!--第五页结束-->
+<!--第六页开始-->
+            <script type="text/ng-template" id="sheying">
+	            <div class="six">
+	            	<img src="img/six/3.png" />
+	            	<p class="changtiao"></p>
+	            	<ul class="clearfix tuzhan" style="margin: 0;padding: 0;">
+	            		<li class="pull-left"><img src="img/six/a1_1.jpg"></li>
+	            		<li class="pull-left"><img src="img/six/a1_2.jpg"></li>
+	            		<li class="pull-left"><img src="img/six/a1_3.jpg"></li>
+	            		<li class="pull-left"><img src="img/six/a1_4.jpg"></li>
+	            		<li class="pull-left"><img src="img/six/a1_5.jpg"></li>
+	            		<li class="pull-left"><img src="img/six/a1_6.jpg"></li>
+	            		<li class="pull-left"><img src="img/six/a1_7.jpg"></li>
+	            		<li class="pull-left"><img src="img/six/a1_8.jpg"></li>
+	            		<li class="pull-left"><img src="img/six/a1_9.jpg"></li>
+	            	</ul>
+	            </div>
+            </script>
+<!--第六页结束-->
+<!--第七页开始-->
+		    <script type="text/ng-template" id="zhuce">
+		    	<!--<script type="text/javascript" src="js/zhuce.js" ></script>-->
+		    	<div class="seven container">
+		    		<div class="row">
+		    			<div class="col-md-2 col-md-offset-1" style="margin-right: 30px;">
+		    				<img src="img/six/zhuce.png" />
+		    			</div>
+		    			<div class="col-md-8 zhuin text-center clearfix">
+		    				<p class="zhudao text-left"><span style="font-size: 16px;font-weight: 600;">快速注册</span>(*为必填项)</p>
+		    				<form ng-model="changezc" ng-submit>
+								<div class="name" name="name">
+									<p id="zcphone">{{zcphone}}</p>
+									<p class="liji">用户名：<span style="color: red;">*</span></p>
+									<input id="telphone" type="text" value="" placeholder="手机号" ng-model="telphone"  required="required" ng-blur="zhutel(telphone)"/>
+								</div>
+								<div class="name" name="name">
+									<p id="zcemail">{{zcemail}}</p>
+									<p class="liji">邮箱：<span style="color: red;">*</span></p>
+									<input id="mail" type="email" value="" placeholder="邮箱" class="" ng-model="mail" ng-blur="zhucemail(mail)"/>
+								</div>
+								<div class="pass" name="name">
+									<p id="zcpas">{{zcpas}}</p>
+									<p class="liji">密码：<span style="color: red;">*</span></p>
+									<input type="password" value="" id="Pass"  placeholder="密码" ng-model="pas" ng-blur="zhumima(pas)"/>
+								</div>
+								<div class="pass" name="name">
+									<p id="zcque">{{zcque}}</p>
+									<p class="liji">确认密码：<span style="color: red;">*</span></p>
+									<input type="password" value="" id="querenpa" placeholder="确认密码" ng-model="pass" ng-blur="zhuqueren(pass)"/>
+								</div>
+								<!--<div class="yanzheng" name="name">
+									<input id="yanzheng"  type="text" value="" placeholder="输入验证码，点击图片更换" />
+									<img id="Img" style="display: block;" src="img/denglu/backpwdemail (1).png" style="width: 90px;"/>
+									<img src="img/denglu/backpwdemail (2).png" style="width: 90px;"/>
+									<img src="img/denglu/backpwdemail (3).png" style="width: 90px;"/>
+									<img src="img/denglu/backpwdemail (4).png" style="width: 90px;"/>
+								</div>-->
+								<div class="yuedu">
+									<input type="checkbox" checked="true"/>我已阅读<a href="">用户须知</a>
+								</div>
+								<div class="zhuce">
+									<a href="#denglu"><input id="zhuce" type="submit" value="注册" ng-click="zhuce(telphone,mail,pas,pass)"/></a>
+								</div>
+							</form>
+		    				<img src="img/six/zhuce1.png" style="margin: 20px;"/>
+		    			</div>
+		    		</div>
+		    	</div>
+			
+		    	
+		    </script>
+<!--第七页结束-->	
+<!--第八页开始-->
+		    <script type="text/ng-template" id="denglu">
+		    	<div class="eight container">
+		    		<div class="col-md-5 col-md-offset-1 dengzuo">
+		    			<img src="img/denglu/denglu.png" style="margin-top: 20px;"/>
+		    		</div>
+		    		<div class="col-md-6">
+		    			<form>
+		    			<p class="dengfont">登录</p>
+		    			<div class="xianshi" style="margin-top: 40px;">
+		    				<p id="user">{{user}}</p>
+		    				<span>用户名：</span>
+		    				<input type="text" value="" placeholder="" id="denguser" ng-model="dengyong" ng-blur="denghu(dengyong)">
+		    			</div>
+		    			<div class="xianshi">
+		    				<p id="dengko">{{dengko}}</p>
+		    				<span>密码：</span>
+		    				<input type="password" value="" placeholder="" id="dengmi" ng-model="dengmi" ng-blur="dengma(dengmi)">
+		    			</div>
+		    			<div class="yuedu pull-left" style="font-size: 14px;margin-top: 10px;margin-left: 90px;">
+								<input type="checkbox" checked="true"/>记住密码
+						</div>
+						<div class="yuedu pull-right" style="font-size: 14px;margin-top: 10px;margin-right: 80px;">
+								<input type="checkbox" checked="true"/>保持登录状态
+						</div>
+						<button class="btn btn-warning denglu" ng-click="denglu(dengyong,dengmi)">登录</button>
+		    			</form>
+		    			<p class="dengsmall">如果您忘记密码，请<a>点击这里</a></p>
+		    			<p class="dengsmall">如果您尚未注册，请<a>点击这里</a>注册</p>
+		    		</div>
+		    	</div>
+			
+		    	
+		    </script>
+<!--第八页结束-->
+			
+			<div>
+				<img src="img/dibu.png" />
+			</div>
+		</div>
+	
+	</body>
+</html>
